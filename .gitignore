@@ -1,0 +1,38 @@
+# Compiled files
+*.class
+build/
+out/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.idea/encodings.xml
+
+# Gradle files
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local configuration
+local.properties
+application-local.properties
+
+# Allure results
+allure-results/
+allure-report/
+
+# Test reports
+test-output/
