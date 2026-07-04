@@ -13,8 +13,7 @@ public class BaseTest {
 
     @BeforeAll
     static void setUpAll() {
-        Configuration.remote = "http://selenoid:4444/wd/hub";
-        Configuration.browser = "chrome";
+        Configuration.remote = "http://selenoid.autotests.cloud/wd/hub";        Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 15000;
