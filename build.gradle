@@ -16,29 +16,24 @@ repositories {
 }
 
 dependencies {
-    // Test frameworks
     testImplementation "org.junit.jupiter:junit-jupiter:${junitVersion}"
     testImplementation "com.codeborne:selenide:${selenideVersion}"
     testImplementation "io.rest-assured:rest-assured:${restAssuredVersion}"
     testImplementation "org.assertj:assertj-core:${assertjVersion}"
 
-    // Allure
     testImplementation "io.qameta.allure:allure-junit5:${allureVersion}"
     testImplementation "io.qameta.allure:allure-rest-assured:${allureVersion}"
     testImplementation "io.qameta.allure:allure-selenide:${allureVersion}"
 
-    // Lombok
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
-    // Jackson
     testImplementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
     testImplementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
     testImplementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
 
-    // Owner
     testImplementation "org.aeonbits.owner:owner:${ownerVersion}"
 }
 

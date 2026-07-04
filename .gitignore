@@ -12,7 +12,6 @@ out/
 .settings/
 .project
 .classpath
-.idea/encodings.xml
 
 # Gradle files
 .gradle/
