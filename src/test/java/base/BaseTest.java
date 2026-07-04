@@ -13,10 +13,10 @@ public class BaseTest {
 
     @BeforeAll
     static void setUpAll() {
-        Configuration.remote = "http://selenoid.autotests.cloud/wd/hub";        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
-        Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 15000;
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserSize = System.getProperty("browser.size", "1920x1080");
+        Configuration.timeout = Long.parseLong(System.getProperty("timeout", "15000"));
         Configuration.pageLoadTimeout = 30000;
         Configuration.baseUrl = ConfigHelper.getBaseUrl();
         Configuration.headless = false;
