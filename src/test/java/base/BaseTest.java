@@ -13,12 +13,14 @@ public class BaseTest {
 
     @BeforeAll
     static void setUpAll() {
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserSize = System.getProperty("browser.size", "1920x1080");
-        Configuration.timeout = Long.parseLong(System.getProperty("timeout", "15000"));
+        Configuration.remote = "http://selenoid:4444/wd/hub";
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "100.0";
+        Configuration.browserSize = "1920x1080";
+        Configuration.timeout = 15000;
         Configuration.pageLoadTimeout = 30000;
         Configuration.baseUrl = ConfigHelper.getBaseUrl();
-        Configuration.headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
+        Configuration.headless = false;
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
